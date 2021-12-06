@@ -18,6 +18,7 @@ public class Task {
         List<Animal> animals = createAnimalsList();
 
         animals.forEach(Animal::printInfo);
+        // по-хорошему, printInfo можно вынести в отдельный класс утилит
 
         for (Animal animal : animals) {
             animal.eat(FoodType.GRASS);
